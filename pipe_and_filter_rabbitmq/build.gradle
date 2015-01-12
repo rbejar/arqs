@@ -5,6 +5,10 @@ buildscript {
     }
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2.1'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
@@ -20,8 +24,8 @@ if (project.hasProperty("mainClass")) {
     mainClassName = "ejemplo.Emisor"
 }
 
-// Necesario para ejecutar gradle runs en consola con entrada de texto. 
-// Sino, por defecto gradle usa un stdin vacío y no funcionan bien
+// Necesario para ejecutar gradle run en consola con entrada de texto. 
+// Por defecto gradle usa un stdin vacío y no funcionan bien
 run {  
     standardInput = System.in  
 }
@@ -30,8 +34,6 @@ jar {
     baseName = 'simple-rabbitmq-pipeline'
     version = '0.1.0'
 }
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
 
 repositories {
     mavenLocal()
