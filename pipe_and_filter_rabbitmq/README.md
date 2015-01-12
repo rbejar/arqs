@@ -2,7 +2,7 @@
 Implementados en Java (aunque RabbitMQ soporta clientes en múltiples lenguajes).
 
 # Requisitos
-Hay que tener instaldo y funcionando el servidor de RabbitMQ en el computador para que funcionen los ejemplos. RabbitMQ es un middleware de mensajería basado en el protocolo abierto AMQP e implementado en Erlang. Las instrucciones para descargar e instalar el servidor en distintos sistemas están en <http://www.rabbitmq.com/download.html>. La versión que he usado y probado es la 3.4.1, pero es posible que los ejemplos funcionen con versiones anteriores y/o posteriores de RabbitMQ.
+Hay que tener instalado y funcionando el servidor de RabbitMQ en el computador para que funcionen los ejemplos. RabbitMQ es un middleware de mensajería basado en el protocolo abierto AMQP e implementado en Erlang. Las instrucciones para descargar e instalar el servidor en distintos sistemas están en <http://www.rabbitmq.com/download.html>. La versión que he usado y probado es la 3.4.1, pero es posible que los ejemplos funcionen con versiones anteriores y/o posteriores de RabbitMQ.
 
 # Uso (desde consola)
 Puesto que hay muchas clases con función main, he configurado el gradle.build para que se puedan lanzar indicando la que queremos desde línea de comandos. El comando genérico es `$ ./gradlew --quiet -PmainClass=LaClaseQueSea run` y las clases con main disponibles son:
