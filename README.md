@@ -16,4 +16,4 @@ Accede al directorio que quieras probar y comprueba que hay un fichero que se ll
 ## Desde Eclipse
 Instala el plugin "Gradle Integration for Eclipse" que corresponda con tu versión de Eclipse desde el marketplace. Luego File > Import... elige Gradle Project, pon como root folder la carpeta que te interese (una que tenga un fichero build.gradle) del proyecto clonado desde Github, haz click en Build Model, selecciona el que sale y click en Finish. Ya tienes el proyecto importado en Eclipse y listo para ejecutarlo desde ahí. 
 
-Si no te actualiza las dependencias automáticamente, haz click deercho en el nombre del proyecto en el Package Explorer, y elige Gradle > Refresh All.
+Si no te actualiza las dependencias automáticamente, haz click derecho en el nombre del proyecto en el Package Explorer, y elige Gradle > Refresh All.
