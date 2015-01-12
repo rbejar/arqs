@@ -1,10 +1,10 @@
 # Ejemplos y ejercicios de pipe and filter con RabbitMQ propuestos en clase
 Implementados en Java (aunque RabbitMQ soporta clientes en múltiples lenguajes).
 
-# Requisitos
+## Requisitos
 Hay que tener instalado y funcionando el servidor de RabbitMQ en el computador para que funcionen los ejemplos. RabbitMQ es un middleware de mensajería basado en el protocolo abierto AMQP e implementado en Erlang. Las instrucciones para descargar e instalar el servidor en distintos sistemas están en <http://www.rabbitmq.com/download.html>. La versión que he usado y probado es la 3.4.1, pero es posible que los ejemplos funcionen con versiones anteriores y/o posteriores de RabbitMQ.
 
-# Uso (desde consola)
+## Uso (desde consola)
 Puesto que hay muchas clases con función main, he configurado el gradle.build para que se puedan lanzar indicando la que queremos desde línea de comandos. El comando genérico es `$ ./gradlew --quiet -PmainClass=LaClaseQueSea run` y las clases con main disponibles son:
 
 Ejemplo básico:
@@ -28,5 +28,9 @@ Ejercicio propuesto de filtro y tubería:
 
 Así que por ejemplo, para ejecutar el ejemplo básico puedes abrir dos consolas en el directorio pipe_and_filter_rabbitmq y ejecutar en una `$ ./gradlew --quiet -PmainClass=ejemplo.Emisor run` y en la otra `$ ./gradlew --quiet -PmainClass=ejemplo.Receptor run` y probar a enviar mensajes entre ellas.
 
-# Uso (desde Eclipse)
+## Uso (desde Eclipse)
 Sigue las instrucciones generales. Luego puedes ejecutar las clases que tienen main y probar. Puedes tener abiertas varias consolas simultáneas dentro de Eclipse para ver el intercambio de mensajes entre las distintas aplicaciones.
+
+## Arquitectura
+Diagrama del ejercicio propuesto (corresponde a las clases del paquete `filtrotuberiapb`).
+![Diagrama de CyC del ejercicio](https://rbejar.github.io/images/arqs_pipefilterrabbitmq_ejer1.png)
