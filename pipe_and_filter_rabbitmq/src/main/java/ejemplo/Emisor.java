@@ -12,28 +12,28 @@ import com.rabbitmq.client.Channel;
  *
  */
 public class Emisor {
-	
+
 	private final static String QUEUE_NAME = "hola";   
 
 	public static void main(String[] argv) throws Exception {
 		//  Creamos una conexión al broker RabbitMQ en localhost
-	    ConnectionFactory factory = new ConnectionFactory();
-	    factory.setHost("localhost");    
-	    Connection connection = factory.newConnection();
-	    // Con un solo canal
-	    Channel channel = connection.createChannel();
-	
-	    // Creamos una cola en el canal llamada QUEUE_NAME (operación
-	    // idempotente: solo se creará si no existe ya)
-	    // Se crea tanto en el emisor como en el receptor, porque no
-	    // sabemos cuál se lanzará antes
-	    channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-	    
-	    int messageNumber;
-	    boolean end = false;
-	       	    
-	    do {    	
-	    	System.out.println("Escribe un número y pulsa <Enter> para enviarlo. El 0 para finalizar.");
+		ConnectionFactory factory = new ConnectionFactory();
+		factory.setHost("localhost");
+		Connection connection = factory.newConnection();
+		// Con un solo canal
+		Channel channel = connection.createChannel();
+
+		// Creamos una cola en el canal llamada QUEUE_NAME (operación
+		// idempotente: solo se creará si no existe ya)
+		// Se crea tanto en el emisor como en el receptor, porque no
+		// sabemos cuál se lanzará antes
+		channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+
+		int messageNumber;
+		boolean end = false;
+
+		do {    	
+			System.out.println("Escribe un número y pulsa <Enter> para enviarlo. El 0 para finalizar.");
 			Scanner sc = new Scanner(System.in);
 			messageNumber = sc.nextInt();
 			if (messageNumber == 0) {
@@ -49,9 +49,9 @@ public class Emisor {
 				channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
 				System.out.println(" [x] Enviado '" + message + "'");
 			}
-	    } while (!end);
-	    
-	    channel.close();
-	    connection.close();
+		} while (!end);
+
+		channel.close();
+		connection.close();
 	}
 }
