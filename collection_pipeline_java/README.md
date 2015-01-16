@@ -6,6 +6,3 @@ Accede al directorio y ejecuta `$ ./gradlew --quiet run` para compilar y ejecuta
 
 ## Uso (desde Eclipse)
 Sigue las instrucciones generales. Luego puedes ejecutar la clase Pipeline.java que tiene función main.
-
-## Arquitectura
-![Diagrama de CyC del ejercicio](https://rbejar.github.io/images/arqs_pipefilter_ejer1.png)
