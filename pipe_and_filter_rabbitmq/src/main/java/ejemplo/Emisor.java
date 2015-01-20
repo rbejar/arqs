@@ -23,7 +23,8 @@ public class Emisor {
 		// Con un solo canal
 		Channel channel = connection.createChannel();
 
-		// Creamos una cola en el canal llamada QUEUE_NAME (operación
+		// Declaramos una cola en el broker a través del canal
+		// recién creado llamada QUEUE_NAME (operación
 		// idempotente: solo se creará si no existe ya)
 		// Se crea tanto en el emisor como en el receptor, porque no
 		// sabemos cuál se lanzará antes
