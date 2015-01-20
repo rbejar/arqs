@@ -27,7 +27,8 @@ public class Emisor {
 		// recién creado llamada QUEUE_NAME (operación
 		// idempotente: solo se creará si no existe ya)
 		// Se crea tanto en el emisor como en el receptor, porque no
-		// sabemos cuál se lanzará antes
+		// sabemos cuál se lanzará antes.
+		// Indicamos que no sea durable ni exclusiva
 		channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 
 		int messageNumber;
