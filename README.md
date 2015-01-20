@@ -1,19 +1,19 @@
-# Arquitecturas Software (30245)
-[Asignatura del grado en Ingeniería Informática, especialidad de Ingeniería del Software, EINA, UNIZAR](http://titulaciones.unizar.es/asignaturas/30245/index14.html).
+# Arquitecturas Software (30245) (Software Architecture)
+[From the degree in Computer Science, specialization in Software Engineering, EINA, UNIZAR](http://titulaciones.unizar.es/asignaturas/30245/index14.html).
 
-Este repositorio contiene diverso código (ejemplos y soluciones de ejercicios) que usaremos en el transcurso de la asignatura.
+This repository contains examples and solutions to some exercises.
 
-# Uso
-Clona el repositorio en tu computador:
+# Use
+Clone this repository in your computer:
 `$ git clone https://github.com/rbejar/arqs.git`
-Una vez clonado accede a cada directorio y consulta allí el fichero README.md para instrucciones específicas.
+Once cloned, go to each directory and check the README.md for specific instructions.
 
-En general está todo configurado para usar [Gradle](http://www.gradle.org/docs/current/userguide/userguide.html) como herramienta de automatización de build y gestión automática de dependencias.
+Generally speaking, everything is configured to use [Gradle](http://www.gradle.org/docs/current/userguide/userguide.html) to manage builds and dependencies. 
 
-## Desde consola
-Accede al directorio que quieras probar y comprueba que hay un fichero que se llama `build.gradle`. Allí ejecuta `$ ./gradlew tasks` (el gradlew.bat si estás en Windows). Si todo va bien, esto descargará la versión de Gradle que se usa en tu computador (si no está ya), y mostrará las tareas de Gradle disponibles en ese build. Por ejemplo, si es una aplicación de Java sencilla, `$ ./gradlew run` ejecutará el programa principal.
+## Console
+Go to the directory you want to try and check that there is a file named `build.gradle`. Run `$ ./gradlew tasks` (gradlew.bat if you are in Windows). If everything is fine, this will download a specific version of Gradle to your computer (only the first time), and will show the available Gradle tasks in the build. For instance, for a simple Java application `$ ./gradlew run` will run the main program.
 
-## Desde Eclipse
-Instala el plugin "Gradle Integration for Eclipse" que corresponda con tu versión de Eclipse desde el marketplace. Luego File > Import... elige Gradle Project, pon como root folder la carpeta que te interese (una que tenga un fichero build.gradle) del proyecto clonado desde Github, haz click en Build Model, selecciona el que sale y click en Finish. Ya tienes el proyecto importado en Eclipse y listo para ejecutarlo desde ahí. 
+## Eclipse
+Install the plugin named "Gradle Integration for Eclipse" wich corresponds to your Eclipse version from its marketplace. Then go to File > Import..., choose Gradle Project, put as root folder the directory you want (one with a build.gradle file) from the project, click on Build model, choose the one that is shown and click on Finish. This imports the project to Eclipse so you can run it from there.  
 
-Si no te actualiza las dependencias automáticamente, haz click derecho en el nombre del proyecto en el Package Explorer, y elige Gradle > Refresh All.
+If dependencies are not automatically met, right click on the name of the projecto in the Package Explorer and choose Gradle > Refresh All.
