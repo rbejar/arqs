@@ -8,4 +8,5 @@ Open a console in the directory and run `$ ./gradlew --quiet run` to compile and
 Follow the generic instructions. Then you can run the class `Pipeline.java` which has a `main()` function.
 
 ## Architecture
+A UML sequence diagram of the example.
 ![UML sequence diagram](https://rbejar.github.io/images/arqs_collpipeline_Java.png)
