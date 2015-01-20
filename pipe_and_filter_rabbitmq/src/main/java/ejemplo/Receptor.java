@@ -27,6 +27,7 @@ public class Receptor {
 		// idempotente: solo se creará si no existe ya)
 		// Se crea tanto en el emisor como en el receptor, porque no
 		// sabemos cuál se lanzará antes
+		// Indicamos que no sea durable ni exclusiva
 		channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 		System.out.println(" [*] Esperando mensajes. CTRL+C para salir");
 
