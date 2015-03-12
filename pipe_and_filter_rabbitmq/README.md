@@ -26,6 +26,10 @@ Ejercicio propuesto de filtro y tubería:
 - filtrotuberiapb.DestinoPar
 - filtrotuberiapb.DestinoImpar
 
+Ejemplo de publicación-suscripción:
+- pubsub.EmisorPubSub
+- pubsub.ReceptorPubSub
+
 Así que por ejemplo, para ejecutar el ejemplo básico puedes abrir dos consolas en el directorio pipe_and_filter_rabbitmq y ejecutar en una `$ ./gradlew --quiet -PmainClass=ejemplo.Emisor run` y en la otra `$ ./gradlew --quiet -PmainClass=ejemplo.Receptor run` y probar a enviar mensajes entre ellas.
 
 ## Uso (desde Eclipse)
