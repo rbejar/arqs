@@ -1,4 +1,4 @@
-# Ejemplos y ejercicios del estilo filtro y tubería con RabbitMQ propuestos en clase
+# Ejemplos y ejercicios de arquitecturas software con RabbitMQ
 Implementados en Java (aunque RabbitMQ soporta clientes en múltiples lenguajes).
 
 ## Requisitos
@@ -20,6 +20,7 @@ Ejemplo de filtro y tubería:
 - filtrotuberia.Destino
 
 Ejercicio propuesto de filtro y tubería:
+
 - filtrotuberiapb.Origen
 - filtrotuberiapb.FiltroAMayus
 - filtrotuberiapb.FiltroLong
@@ -27,6 +28,7 @@ Ejercicio propuesto de filtro y tubería:
 - filtrotuberiapb.DestinoImpar
 
 Ejemplo de publicación-suscripción:
+
 - pubsub.EmisorPubSub
 - pubsub.ReceptorPubSub
 
@@ -36,5 +38,5 @@ Así que por ejemplo, para ejecutar el ejemplo básico puedes abrir dos consolas
 Sigue las instrucciones generales. Luego puedes ejecutar las clases que tienen main y probar. Puedes tener abiertas varias consolas simultáneas dentro de Eclipse para ver el intercambio de mensajes entre las distintas aplicaciones.
 
 ## Arquitectura
-Diagrama de CyC del ejercicio propuesto (corresponde a las clases del paquete `filtrotuberiapb`).
+Diagrama de CyC del ejercicio propuesto de filtro y tubería (corresponde a las clases del paquete `filtrotuberiapb`).
 ![Diagrama de CyC del ejercicio](https://rbejar.github.io/images/arqs_pipefilterrabbitmq_ejer1.png)
